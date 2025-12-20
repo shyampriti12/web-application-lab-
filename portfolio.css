@@ -1,0 +1,233 @@
+/* RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2b03f3;
+    background: #fbfbf7e2;
+}
+
+/* TOP NAVIGATION BAR */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #f303c7;
+}
+
+.top-links a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #f303c7;
+}
+
+.top-links a:hover {
+    color: #f303c7;
+}
+
+ /* HERO SECTION */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 80vh;
+}
+
+/* LEFT SIDE */
+.left {
+    padding: 5rem;
+}
+
+.left h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.left span {
+    color: #f303c7;
+}
+
+.left p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #f303c7;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #f50384;
+}
+
+/* RIGHT SIDE */
+.right {
+    background: #bff3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* RIGHT CARD */
+.right-card {
+    background: white;
+    padding: 2.5rem;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.right-card:hover {
+    transform: translateY(-5px);
+}
+
+.right-card h2 {
+    color: #f303c7;
+    margin-bottom: 1rem;
+}
+
+.right-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* SKILL BADGES */
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.badges span {
+    background: #f303c7;
+    color: white;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+
+   /* ABOUT SECTION */
+
+.about {
+    padding: 4rem;
+    max-width: 900px;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* SOCIAL LINKS */
+.social-icons {
+    margin-top: 1.5rem;
+}
+
+.social-icons a {
+    margin-right: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f303c7;
+}
+
+.social-icons a:hover {
+    text-decoration: underline;
+}
+
+/* CONTACT SECTION */
+.contact {
+    padding: 4rem;
+    background: #f9fafb;
+}
+
+.contact h2 {
+    margin-bottom: 1.5rem;
+}
+
+form {
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input,
+textarea {
+    padding: 0.7rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background: #f303c7;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #f303c7;
+}
+
+ /* FOOTER */
+footer {
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+   /* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .right {
+        min-height: 250px;
+    }
+
+    .left {
+        padding: 3rem;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
